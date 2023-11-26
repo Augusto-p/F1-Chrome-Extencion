@@ -3,11 +3,11 @@ let headersList = {
     "User-Agent": "Thunder Client (https://www.thunderclient.com)"
    }
    
-   let response = fetch("https://racingnews365.com/formula-1-standings-2023", { 
+   let response = await fetch("https://www.formula1.com/en/results.html/lasted/drivers.html", { 
      method: "GET",
      headers: headersList
    });
    
-   let data = response;
-   console.log(data);
+   let data = await response.text();
+   document.body.innerText = data
    
