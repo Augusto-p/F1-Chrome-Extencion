@@ -1,0 +1,53 @@
+.GoogleDock {
+    position: absolute;
+    bottom: 15vh;
+    right: 0;
+    background-color: #323232;
+    height: 10vh;
+    width: 64vw;
+    border-top-left-radius: 5vh;
+    border-bottom-left-radius: 5vh;
+    display: grid;
+    grid-template-columns: 3vw repeat(36, 2.5vw);
+    grid-gap: 1vw;
+    grid-template-rows: 100%;
+    padding-left: 1vw;
+    box-sizing: border-box;
+    transition: transform 1s;
+    transform: translateX(59.4vw);
+}
+
+.GoogleDock.Active{
+    transform: translateX(0);
+}
+
+.GoogleDock .Head {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: transparent;
+    border: none;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+}
+
+.GoogleDock .Head:hover {
+    transform: rotatez(-45deg);
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+}
+
+
+.GoogleDock svg {
+    height: 60%;
+}
+
+.GoogleDock a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GoogleDock a:hover svg{
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+}

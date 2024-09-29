@@ -1,0 +1,42 @@
+{
+  "name": "F1 Custom New Tab",
+  "description": "F1 Custom New Tab",
+  "version": "1.0",
+  "incognito": "split",
+  "host_permissions": [
+    "https://www.google.com/s2/favicons",
+    "https://www.formula1.com/*",
+    "https://www.fiaformula2.com/*",
+    "https://www.fiaformula3.com/*",
+    "https://www.f1academy.com/*",
+    "https://backiee.com/",
+    "https://www.wsupercars.com/"
+  ],
+  "permissions": [
+    "bookmarks",
+    "favicon",
+    "activeTab"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "_favicon/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "extension_ids": [
+        "*"
+      ]
+    }
+  ],
+ 
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  "chrome_url_overrides": {
+    "newtab": "new-tab.html"
+  },
+  "manifest_version": 3
+}

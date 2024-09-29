@@ -1,0 +1,248 @@
+.F1Api * {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.F1Api {
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 3vh solid #e10600;
+  border-right: none;
+  border-radius: 5vh;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  box-sizing: border-box;
+  transition: transform 1s;
+  color: #fff;
+  /* overflow-y: hidden; */
+  height: 75vh;
+  width: 35vw;
+}
+
+.F1Api header {
+  background-color: transparent;
+  width: 100%;
+  height: 15vh;
+  display: grid;
+  grid-template-rows: 7vh 8vh;
+  grid-template-columns: 7vh 1fr 8vh;
+  justify-items: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.f1Logo {
+  grid-column: 2;
+  grid-row: 1/3;
+  width: 100%;
+  padding: 3vw;
+}
+
+.F1Api header button img,
+button.back img {
+  background-color: transparent;
+  border-radius: 10vh;
+  padding: 5px;
+  width: 100%;
+  user-select: none;
+
+  -webkit-user-drag: none;
+}
+button.back img {
+  background-color: #e10600;
+}
+
+
+/* .F1Api header button.active img,
+button.back:hover img {
+  border: 1px solid white;
+  background-color: #e10600;
+  
+} */
+
+
+button.back {
+  user-select: none;
+  grid-column: 1;
+  grid-row: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+  transition: transform 1s;
+  position: absolute;
+  right: 33vw;
+  z-index: 999;
+  top: 23vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.F1Api header button.Drivers {
+  grid-column: 3;
+  grid-row: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.F1Api header button.Teams {
+  position: relative;
+  z-index: 1;
+  grid-column: 3;
+  grid-row: 2;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.F1Api .table {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: transparent;
+  border-top: 1px solid #ccc;
+
+
+}
+
+.F1Api .image img{
+  width: 90%;
+}
+
+.F1Api .table.active {
+  display: flex;
+}
+
+.F1Api .row {
+  display: grid;
+  border-right: 1px solid #ccc;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 50px 5vw 7vh 1fr 10vh;
+  border-bottom: 1px solid #ccc;
+  height: 7vh;
+  border-left: solid 1px white;
+  background-color: transparent;
+
+}
+
+.F1Api .header {
+  font-weight: bold;
+  grid-template-columns: 50px 5vw 7vh 1fr 10vh 15px;
+}
+
+.F1Api .Drivers .row {
+  grid-template-columns: 50px 5vw 7vh 1fr 10vh;
+}
+
+
+.F1Api .Teams .row {
+  grid-template-columns: 5px 2vw 28vh 1fr 6vh;
+}
+
+.F1Api .Teams .header {
+  grid-template-columns: 5px 2vw 28vh 1fr 6vh 15px;
+}
+
+.F1Api .Drivers .header {
+  grid-template-columns: 50px 5vw 7vh 1fr 10vh 15px;
+}
+
+.F1Api .color {
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.F1Api .color img{
+  width: 75%;
+  border: 1px solid #ffffffaa;
+  border-radius: 5px;
+}
+
+.F1Api .image {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.F1Api .image img {
+  -webkit-user-drag: none;
+}
+
+.F1Api .Drivers .image img {
+  background-color: #141414;
+  border-radius: 50%;
+  width: 90%;
+
+}
+
+.F1Api .tbody {
+  overflow-y: scroll;
+  height: 48vh;
+}
+
+
+
+
+
+.F1Api.desavilte~button.back {
+  position: absolute;
+  /* right: -0.5vw; */
+  transform: translatex(33.5vw);
+  display: flex !important;
+}
+
+.F1Api.desavilte~button.back img {
+  background-color: #e10600;
+}
+
+
+.F1Api.desavilte {
+  transform: translateX(34vw);
+}
+
+#teamDriverActive{
+  border: 1px solid white;
+  background-color: #e10600; 
+  width: 2vw;
+  height: 2vw;
+  box-sizing: content-box;
+  padding: 5px;
+  border-radius: 100%;
+  position: absolute;
+  right: 0.35vw;
+  top: 0.2vh;
+  z-index: 0;
+  transition: transform 1s;
+}
+
+
+.F1Api header .Teams.active ~ #teamDriverActive{
+  transform: translateY(7.5vh); 
+ 
+}

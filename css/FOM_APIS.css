@@ -1,0 +1,664 @@
+body {
+    font-family: Roboto;
+}
+
+
+.FOM_APIS_Content {
+    position: absolute;
+    right: 0;
+    top: 12vh;
+    bottom: 12vh;
+    width: 35vw;
+    background-color: transparent;
+    border: 3vh solid transparent;
+    border-right: none;
+    border-radius: 5vh;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-sizing: border-box;
+    transition: transform 1s;
+    color: #fff;
+    transform: translateX(35vw);
+    z-index: 998;
+    user-select: none;
+}
+
+.FOM_APIS_Content.ACTIVE {
+    transform: translateX(0);
+    z-index: 999;
+}
+
+.FOM_APIS_BLACK_Content {
+    position: absolute;
+    top: 15vh;
+    right: -1vw;
+    width: 10vh;
+    height: 31vh;
+    transition: transform 1s;
+}
+
+.FOM_APIS_BLACK_Content.ACTIVE {
+    transform: translateX(-35vw);
+}
+
+.FOM_APIS_BLACK {
+    box-sizing: border-box;
+    width: 10vh;
+    height: 7vh;
+    padding: 5px;
+    padding-right: 3vh;
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: 50vh;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.FOM_APIS_BLACK svg {
+    box-sizing: border-box;
+    width: 100%;
+    fill: #fff;
+    display: none;
+}
+
+.FOM_APIS_BLACK .Open_Button {
+    display: block;
+}
+
+.FOM_APIS_BLACK.ACTIVE .Close_Button {
+    display: block;
+}
+
+.FOM_APIS_BLACK.ACTIVE .Open_Button {
+    display: none;
+}
+
+.FOM_APIS_NEXT_RACE_Button {
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    top: -9vh;
+    left: 2vh;
+    border: none;
+    border-radius: 3vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 997;
+
+}
+
+.FOM_APIS_NEXT_RACE_Button svg {
+    fill: #fff;
+}
+
+.FOM_APIS_NEXT_RACE_Button:hover svg {
+    fill: #323232;
+}
+
+.FOM_APIS_NEXT_RACE {
+    position: absolute;
+    width: 20vw;
+    height: 8vh;
+    background-color: #323232;
+    top: -14vh;
+    right: 0;
+    border-top-left-radius: 5vh;
+    border-bottom-left-radius: 5vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 10vw 10vw;
+    grid-template-rows: 100%;
+    align-items: center;
+    border: 1vh solid transparent;
+    justify-items: center;
+    transform: translateX(21vw);
+    transition: transform 1s;
+
+}
+
+.FOM_APIS_NEXT_RACE .Countdown {
+    padding: 7px 14px;
+    background-color: #111;
+    border-radius: 10vh;
+    cursor: default;
+
+}
+
+.FOM_APIS_NEXT_RACE.Started .Countdown {
+    background-color: #009c00;
+}
+
+.FOM_APIS_NEXT_RACE img {
+    grid-column: 1;
+    width: 100%;
+}
+
+.FOM_APIS_NEXT_RACE:hover {
+    transform: translateX(0);
+}
+
+.FOM_APIS_Content_Block {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #323232;
+    border-radius: 2vh;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+}
+
+.FOM_APIS_HEADER {
+    box-sizing: border-box;
+    height: 15vh;
+    background-color: transparent;
+    padding-left: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #fff;
+}
+
+.FOM_APIS_HEADER>svg {
+    height: 100%;
+}
+
+.FOM_APIS_HEADER_Buttom {
+    width: 8vh;
+    height: 8vh;
+    border: 5px solid white;
+    box-sizing: border-box;
+    border-radius: 10vh;
+    padding: 5px;
+    background-color: transparent;
+    overflow: hidden;
+
+}
+
+.FOM_APIS_HEADER_Buttom svg {
+    fill: #fff;
+    width: 100%;
+}
+
+
+.FOM_APIS_DATA_CONTENT {
+    width: 200%;
+    height: 55vh;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    transition: transform 1s;
+}
+
+.FOM_APIS_DATA_CONTENT.ACTIVE {
+    transform: translateX(-50%);
+    
+}
+.FOM_APIS_DATA_CONTENT_TBODY{
+    overflow-y: scroll;
+    height: 48vh;
+}
+
+.FOM_APIS_DATA_DRIVER {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: transparent;
+    width: 100%;
+    height: 55vh;
+    overflow: hidden;
+}
+
+.FOM_APIS_DATA_TEAM {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.FOM_APIS_ROW {
+    display: grid;
+    border-right: 1px solid #ccc;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 1px solid #ccc;
+    height: 7vh;
+    border-left: solid 1px white;
+    background-color: transparent;
+    grid-template-rows: 100%;
+    
+}
+
+.FOM_APIS_ROW_HEADER {
+    font-weight: bold;
+}
+.FOM_APIS_ROW .PHOTO{
+    -webkit-user-drag: none;
+}
+
+
+.F1_API_ROW.DRIVER {
+    grid-template-columns: 50px 5vw 7vh 1fr 10vh;
+}
+
+.F1_API_ROW_HEADER.DRIVER {
+    grid-template-columns: 50px 5vw 7vh 1fr 10vh 15px;
+}
+
+.F1_API_ROW .COLOR {
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.F1_API_ROW.DRIVER .COLOR img {
+    width: 75%;
+    border: 1px solid #ffffffaa;
+    border-radius: 5px;
+}
+
+.F1_API_ROW.DRIVER .PHOTO{
+    grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.F1_API_ROW.DRIVER .PHOTO img{
+    background-color: #141414;
+  border-radius: 50%;
+  width: 90%;
+    
+}
+
+.F1_API_ROW.TEAM {
+    grid-template-columns: 5px 2vw 28vh 1fr 9vh ;
+}
+
+.F1_API_ROW_HEADER.TEAM {
+    grid-template-columns: 5px 3vw 26vh 1fr 9vh 15px;
+}
+
+.F1_API_ROW.TEAM .PHOTO{
+    display: flex;
+    justify-content: right;
+}
+
+.F1_API_ROW.TEAM .PHOTO img{
+    
+  width: 90%;
+    
+}
+
+.F1_API_Content {
+    border-color: #e10600;
+}
+
+.F1_API_BLACK {
+    background-color: #e10600;
+}
+
+.F1_API_HEADER_Buttom.ACTIVE {
+    border-color: #e10600;
+}
+
+.F1_API_HEADER_Buttom.ACTIVE svg {
+    fill: #e10600;
+}
+
+.F1_API_NEXT_RACE_Button {
+    background-color: #e10600;
+}
+
+.F1_API_NEXT_RACE {
+    border-color: #e10600;
+}
+
+.F1_API_NEXT_RACE_Button:hover~.F1_API_NEXT_RACE {
+    transform: translateX(0);
+}
+
+/* Formula 2 */
+.F2_API_ROW.TEAM {
+    grid-template-columns: 5px 2vw 28vh 1fr 9vh ;
+}
+
+.F2_API_ROW_HEADER.TEAM {
+    grid-template-columns: 5px 3vw 26vh 1fr 9vh 15px;
+}
+
+.F2_API_ROW.TEAM .PHOTO{
+    display: flex;
+    justify-content: right;
+}
+
+.F2_API_ROW.TEAM .PHOTO img{
+  width: 90%;
+    
+}
+
+.F2_API_ROW.DRIVER .PHOTO{
+    grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.F2_API_ROW.DRIVER .PHOTO img{
+    background-color: #141414;
+  border-radius: 50vh;
+  width: 5vh;
+  height: 5vh;
+    
+}
+
+
+.F2_API_ROW .COLOR {
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.F2_API_ROW.DRIVER .COLOR img {
+    width: 75%;
+    border: 1px solid #ffffffaa;
+    border-radius: 5px;
+}
+.F2_API_ROW.DRIVER {
+    grid-template-columns: 50px 5vw 7vh 1fr 10vh;
+}
+
+.F2_API_ROW_HEADER.DRIVER {
+    grid-template-columns: 50px 5vw 7vh 1fr 10vh 15px;
+}
+
+.F2_API_Content {
+    border-color: #1c78fb;
+}
+
+.F2_API_BLACK {
+    background-color: #1c78fb;
+    top: 8vh;
+}
+
+.F2_API_HEADER_Buttom.ACTIVE {
+    border-color: #1c78fb;
+}
+
+.F2_API_HEADER_Buttom.ACTIVE svg {
+    fill: #1c78fb;
+}
+.F2_API_NEXT_RACE_Button {
+    background-color: #1c78fb;
+}
+.F2_API_NEXT_RACE {
+    border-color: #1c78fb;
+}
+
+.F2_API_NEXT_RACE_Button:hover~.F2_API_NEXT_RACE {
+    transform: translateX(0);
+}
+
+
+/* FORMULA 3 */
+.F3_API_Content {
+    border-color: #e95500;
+}
+
+.F3_API_BLACK {
+    background-color: #e95500;
+    top: 16vh;
+}
+
+.F3_API_HEADER_Buttom.ACTIVE {
+    border-color: #e95500;
+}
+
+.F3_API_HEADER_Buttom.ACTIVE svg {
+    fill: #e95500;
+}
+.F3_API_NEXT_RACE_Button {
+    background-color: #e95500;
+}
+.F3_API_NEXT_RACE {
+    border-color: #e95500;
+}
+
+.F3_API_NEXT_RACE_Button:hover~.F3_API_NEXT_RACE {
+    transform: translateX(0);
+}
+.F3_API_ROW.TEAM {
+    grid-template-columns: 5px 2vw 28vh 1fr 9vh ;
+}
+
+.F3_API_ROW_HEADER.TEAM {
+    grid-template-columns: 5px 3vw 26vh 1fr 9vh 15px;
+}
+
+.F3_API_ROW.TEAM .PHOTO{
+    display: flex;
+    justify-content: right;
+}
+
+.F3_API_ROW.TEAM .PHOTO img{
+  width: 90%;
+}
+
+.F3_API_ROW.DRIVER .PHOTO{
+    grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.F3_API_ROW.DRIVER .PHOTO img{
+    background-color: #141414;
+  border-radius: 50vh;
+  width: 5vh;
+  height: 5vh;
+    
+}
+
+
+.F3_API_ROW .COLOR {
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.F3_API_ROW.DRIVER .COLOR img {
+    width: 75%;
+    border: 1px solid #ffffffaa;
+    border-radius: 5px;
+}
+.F3_API_ROW.DRIVER {
+    grid-template-columns: 50px 5vw 7vh 1fr 10vh;
+}
+
+.F3_API_ROW_HEADER.DRIVER {
+    grid-template-columns: 50px 5vw 7vh 1fr 10vh 15px;
+}
+
+
+
+/* Formula 1 academy */
+
+.F1A_API_Content {
+    border-color: #e9009b;
+}
+
+.F1A_API_BLACK {
+    background-color: #e9009b;
+    top: 24vh;
+}
+
+.F1A_API_HEADER_Buttom.ACTIVE {
+    border-color: #e9009b;
+}
+
+.F1A_API_HEADER_Buttom.ACTIVE svg {
+    fill: #e9009b;
+}
+.F1A_API_NEXT_RACE_Button {
+    background-color: #e9009b;
+}
+.F1A_API_NEXT_RACE {
+    border-color: #e9009b;
+}
+
+.F1A_API_NEXT_RACE_Button:hover~.F1A_API_NEXT_RACE {
+    transform: translateX(0);
+}
+
+.F1A_API_ROW.DRIVER {
+    grid-template-columns: 50px 5vw 7vh 1fr 10vh;
+}
+
+.F1A_API_ROW_HEADER.DRIVER {
+    grid-template-columns: 50px 5vw 7vh 1fr 10vh 15px;
+}
+.F1A_API_ROW.TEAM {
+    grid-template-columns: 5px 2vw 28vh 1fr 9vh ;
+}
+
+.F1A_API_ROW_HEADER.TEAM {
+    grid-template-columns: 5px 3vw 26vh 1fr 9vh 15px;
+}
+
+.F1A_API_ROW.TEAM .PHOTO{
+    display: flex;
+    justify-content: right;
+}
+
+.F1A_API_ROW.TEAM .PHOTO img{
+  width: 90%;
+}
+
+.F1A_API_ROW.DRIVER .PHOTO{
+    grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.F1A_API_ROW .COLOR {
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.F1A_API_ROW.DRIVER .COLOR img {
+    width: 75%;
+    border: 1px solid #ffffffaa;
+    border-radius: 5px;
+}
+
+
+/* formula e */
+.FE_API_Content {
+    border-color: #00f;    ;
+}
+
+.FE_API_BLACK {
+    background-color: #00f;
+    top: 32vh;
+}
+
+.FE_API_HEADER_Buttom.ACTIVE {
+    border-color: #00f;
+}
+
+.FE_API_HEADER_Buttom.ACTIVE svg {
+    fill: #00f;
+}
+.FE_API_NEXT_RACE_Button {
+    background-color: #00f;
+}
+.FE_API_NEXT_RACE {
+    border-color: #00f;
+}
+
+.FE_API_NEXT_RACE_Button:hover~.FE_API_NEXT_RACE {
+    transform: translateX(0);
+}
+.FE_API_ROW.TEAM {
+    grid-template-columns: 5px 2vw 28vh 1fr 9vh ;
+}
+
+.FE_API_ROW_HEADER.TEAM {
+    grid-template-columns: 5px 3vw 26vh 1fr 9vh 15px;
+}
+
+.FE_API_ROW.TEAM .PHOTO{
+    display: flex;
+    justify-content: right;
+}
+
+.FE_API_ROW.TEAM .PHOTO img{
+  width: 90%;
+}
+
+.FE_API_HEADER>svg {
+    height: 60%;
+}
+.FE_API_ROW.DRIVER .PHOTO{
+    grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FE_API_ROW.DRIVER .PHOTO img{
+    background-color: #141414;
+  border-radius: 50vh;
+  width: 5vh;
+  height: 5vh;
+    
+}
+
+
+.FE_API_ROW .COLOR {
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FE_API_ROW.DRIVER .COLOR img {
+    width: 75%;
+    border: 1px solid #ffffffaa;
+    border-radius: 5px;
+}
+.FE_API_ROW.DRIVER {
+    grid-template-columns: 50px 5vw 7vh 1fr 10vh;
+}
+
+.FE_API_ROW_HEADER.DRIVER {
+    grid-template-columns: 50px 5vw 7vh 1fr 10vh 15px;
+}
