@@ -1,0 +1,256 @@
+.Settings_Manager{
+    box-sizing: border-box;
+    position: absolute;
+    width: 35vw;
+    border: 1vw solid #323232;
+    background-color: #111;
+    top: 0;
+    bottom: 0;
+    border-top-right-radius: 5vh ;
+    border-bottom-right-radius: 5vh;
+    z-index: 1000;
+    transition: transform 1s;
+    transform: translateX(-35vw);
+    border-left: none;
+    display: grid;
+    grid-template-rows: 10vh  3vh auto 10vh;
+    color: #fff;
+    /* overflow: hidden; */
+}
+
+.Settings_Manager.ACTIVE{
+    transform: translateX(0);
+}
+
+.Settings_Manager_Button{
+    box-sizing: border-box;
+    padding-left: 1vw;
+    border: none;
+    position: absolute;
+    width: 5vw ;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #323232;
+    right: -5vw;
+    top: 21vw;
+    border-top-right-radius: 5vh;
+    border-bottom-right-radius: 5vh;       
+}
+
+
+
+.Settings_Manager_Button svg{
+    width: 90%;
+    transform: rotateZ(0deg);
+    transition: transform 1s;
+    fill: #fff;
+}
+
+.Settings_Manager_Button:hover svg{
+    transform: rotateZ(360deg);
+}
+
+.Settings_Manager_Tittle{
+    grid-row: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #323232;
+}
+.Settings_Manager_Tittle h2{
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+
+.Settings_Manager_Save{
+    
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #323232;
+    position: relative;
+}
+
+.Settings_Manager_Save button{
+    background-color: #df5cff;
+    width: 70%;
+    height: 70%;
+    border-radius: 50vh;
+    border: 1vh solid #323232;
+    color: #fff;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.Settings_Manager_Save button:hover{
+    color: #df5cff;
+    background-color: #111;
+    border-color: #df5cff;
+}
+
+.Settings_Manager_Selectors{
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: relative; 
+}
+
+.Settings_Manager_Selectors button{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-weight: 900;
+    font-size: large;
+}
+.Settings_Manager_Selectors button:hover{
+    color: #df5cff;
+}
+
+.Settings_Manager_Content_box{
+    grid-row: 3;
+    display: block;
+    overflow: hidden;
+}
+
+
+.Settings_Manager_Content{
+    
+    width: 200%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1vh auto;
+    transition: transform 1s;
+}
+
+.Settings_Manager_Content.ACTIVE{
+    transform: translateX(-50%);
+}
+
+.Settings_Manager_Marks{
+    box-sizing: border-box;
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.Settings_Manager_Marks div{
+    background-color: #df5cff;
+    border-radius: 10vh;
+    margin: 0 1vh;
+}
+
+
+.Settings_Manager_Wallpapers{
+    box-sizing: border-box;
+    grid-column: 1;
+    grid-row: 2;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    display: grid;
+    row-gap: 1vh;
+    grid-auto-rows: 2vw;
+    position: relative;
+    background-color: transparent;
+}
+
+
+.Settings_Manager_Wallpapers .SMRow, .Settings_Manager_Services .SMRow{
+    display: grid;
+    grid-template-columns: 2vw auto;
+    grid-template-rows: auto;
+    height: 100%;
+    position: relative;
+}
+
+
+.Settings_Manager_Wallpapers .SMRow div svg, .Settings_Manager_Services .SMRow div svg{
+    height: 90%;
+    opacity: 0;
+    fill: #fff;
+    transform: rotateZ(45deg);
+    transition: transform 1s;
+}
+
+
+
+.Settings_Manager_Wallpapers .SMRow input, .Settings_Manager_Services .SMRow input{
+    background-color: pink;
+    opacity: 0;
+    grid-column: 1;
+    position: absolute;
+    z-index: 9999;
+    width: 2vw;
+    height: 2vw;
+}
+.Settings_Manager_Wallpapers input~div{
+    grid-column: 1;
+    background-color: #323232;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Settings_Manager_Wallpapers input:checked~div, .Settings_Manager_Services input:checked~div{
+    background-color: #df5cff;
+    
+}
+
+.Settings_Manager_Wallpapers input:checked~div svg, .Settings_Manager_Services input:checked~div svg{
+    opacity: 1;
+    transform: rotateZ(0deg);
+}
+
+
+
+
+.Settings_Manager_Wallpapers label, .Settings_Manager_Services label{
+    grid-column: 2;
+    font-size: larger;
+    font-weight: 900;
+    display: flex;
+    padding-left: 1vw;
+    align-items: center;
+}
+
+
+.Settings_Manager_Services{
+    grid-column: 2;
+    grid-row: 2;
+    box-sizing: border-box;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    display: grid;
+    row-gap: 1vh;
+    grid-auto-rows: 2vw;
+    position: relative;
+    
+}
+
+
+
+.Settings_Manager_Services input~div{
+    grid-column: 1;
+    background-color: #323232;
+    border-radius: 1vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

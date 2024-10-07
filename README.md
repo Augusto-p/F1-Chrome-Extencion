@@ -1,13 +1,15 @@
-# Tutorial: Cómo instalar una extensión de Chrome desempaquetada
+# F1 Custom New Tab
 
+
+## Instalacion
 Este tutorial te guiará a través del proceso de instalación de una extensión de Chrome en formato desempaquetado.
 
-## Requisitos Previos
+### Requisitos Previos
 
 - Un archivo de extensión de Chrome descomprimido (una carpeta que contiene el archivo `manifest.json` y otros archivos de la extensión).
 - Google Chrome instalado en tu computadora.
 
-## Pasos para la instalación
+### Pasos para la instalación
 
 1. **Abre Google Chrome**
 
@@ -30,15 +32,42 @@ Este tutorial te guiará a través del proceso de instalación de una extensión
 
    Una vez que hayas cargado la extensión, deberías verla en la lista de extensiones. Verifica que esté habilitada y funcionando correctamente.
 
-## Solución de Problemas
+### Solución de Problemas
 
 - Si la extensión no se carga, asegúrate de que el archivo `manifest.json` sea válido y que todos los archivos requeridos estén presentes en la carpeta.
 - Revisa la consola de errores en la página de extensiones para obtener más información sobre cualquier problema.
 
-## Desinstalar la extensión
+### Desinstalar la extensión
 
 Si deseas desinstalar la extensión más tarde, simplemente haz clic en el botón de **Eliminar** que se encuentra junto a la extensión en la página de extensiones.
 
-## Conclusión
+### Conclusión
 
 Ahora has aprendido a instalar una extensión de Chrome en formato desempaquetado. Puedes utilizar este proceso para probar extensiones en desarrollo o personalizadas.
+
+
+## Wallpaper Services
+### Disponibles:
+   - Cars
+   - Formula 1
+   - Anime
+### Porximamente:
+   - Soccer
+   - Football
+   - Basketball
+   - Motorcycle
+
+## Championship Services:
+### Disponibles:
+   - Formula 1
+   - Formula 2
+   - Formula 3
+   - Formula 1 Academy
+   - Formula e
+   - IndyCar
+   - MotoGp
+### Porximamente:
+   - WEC
+   - WRC
+   - Moto 2
+   - Moto 3

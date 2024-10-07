@@ -1,7 +1,7 @@
 {
   "name": "F1 Custom New Tab",
   "description": "F1 Custom New Tab",
-  "version": "1.0",
+  "version": "1.5",
   "incognito": "split",
   "host_permissions": [
     "https://www.google.com/s2/favicons",
@@ -10,12 +10,21 @@
     "https://www.fiaformula3.com/*",
     "https://www.f1academy.com/*",
     "https://backiee.com/",
-    "https://www.wsupercars.com/"
+    "https://www.wsupercars.com/",
+    "https://4kwallpapers.com/",
+    "https://alphacoders.com/",
+    "https://wall.alphacoders.com/",
+    "https://www.fiaformulae.com/",
+    "https://api.formula-e.pulselive.com/",
+    "https://www.indycar.com/",
+    "https://www.motogp.com/",
+    "https://api.pulselive.motogp.com/"
   ],
   "permissions": [
     "bookmarks",
     "favicon",
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
   "web_accessible_resources": [
     {

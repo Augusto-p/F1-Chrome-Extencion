@@ -47,7 +47,7 @@ body {
     height: 7vh;
     padding: 5px;
     padding-right: 3vh;
-    position: absolute;
+    position: relative;
     border: 2px solid transparent;
     border-radius: 50vh;
     border-right: none;
@@ -55,6 +55,7 @@ body {
     border-bottom-right-radius: 0;
     display: flex;
     align-items: center;
+    margin-top: 1vh;
 
 }
 
@@ -71,6 +72,12 @@ body {
 
 .FOM_APIS_BLACK.ACTIVE .Close_Button {
     display: block;
+    transform: rotateZ(0deg);
+    transition: transform 1s;
+}
+
+.FOM_APIS_BLACK.ACTIVE:hover .Close_Button{
+    transform: rotateZ(-180deg);
 }
 
 .FOM_APIS_BLACK.ACTIVE .Open_Button {
@@ -394,7 +401,7 @@ body {
 
 .F2_API_BLACK {
     background-color: #1c78fb;
-    top: 8vh;
+    
 }
 
 .F2_API_HEADER_Buttom.ACTIVE {
@@ -423,7 +430,7 @@ body {
 
 .F3_API_BLACK {
     background-color: #e95500;
-    top: 16vh;
+    
 }
 
 .F3_API_HEADER_Buttom.ACTIVE {
@@ -509,7 +516,7 @@ body {
 
 .F1A_API_BLACK {
     background-color: #e9009b;
-    top: 24vh;
+    
 }
 
 .F1A_API_HEADER_Buttom.ACTIVE {
@@ -584,7 +591,7 @@ body {
 
 .FE_API_BLACK {
     background-color: #00f;
-    top: 32vh;
+    
 }
 
 .FE_API_HEADER_Buttom.ACTIVE {
@@ -661,4 +668,143 @@ body {
 
 .FE_API_ROW_HEADER.DRIVER {
     grid-template-columns: 50px 5vw 7vh 1fr 10vh 15px;
+}
+
+
+
+.IndyCar_API_BLACK{
+    background-color: #e2231a;
+}
+
+.IndyCar_API_Content {
+    border-color: #e2231a;
+}
+
+.IndyCar_API_ROW.DRIVER {
+    grid-template-columns: 50px 5vw 7vh 1fr 10vh;
+}
+
+.IndyCar_API_ROW_HEADER.DRIVER {
+    grid-template-columns: 50px 5vw 7vh 1fr 10vh 15px;
+}
+
+.IndyCar_API_ROW .COLOR {
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.IndyCar_API_ROW.DRIVER .COLOR img {
+    width: 75%;
+    /* border: 1px solid #ffffffaa; */
+    border-radius: 5px;
+}
+
+.IndyCar_API_ROW.DRIVER .PHOTO img{
+    background-color: #141414;
+  border-radius: 50vh;
+  width: 5vh;
+  height: 5vh;
+    
+}
+
+.MotoGP_API_BLACK{
+ background-color: #000;   
+}
+
+.MotoGP_API_Content {
+    border-color: #000;
+}
+
+.MotoGP_API_ROW.DRIVER {
+    grid-template-columns: 50px 5vw 7vh 1fr 10vh;
+}
+
+.MotoGP_API_ROW_HEADER.DRIVER {
+    grid-template-columns: 50px 5vw 7vh 1fr 10vh 15px;
+}
+
+.MotoGP_API_HEADER_Buttom.ACTIVE {
+    border-color: #000;
+}
+
+.MotoGP_API_HEADER_Buttom.ACTIVE svg {
+    fill: #000;
+}
+
+.MotoGP_API_ROW.TEAM {
+    grid-template-columns: 5px 2vw 28vh 1fr 9vh ;
+}
+
+.MotoGP_API_ROW_HEADER.TEAM {
+    grid-template-columns: 5px 3vw 26vh 1fr 9vh 15px;
+}
+
+.MotoGP_API_HEADER>svg{
+    height: 80%;
+}
+
+.MotoGP_API_ROW.DRIVER .PHOTO .img{
+    background-color: #141414;
+  border-radius: 50vh;
+  width: 5vh;
+  height: 5vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.MotoGP_API_ROW.DRIVER .PHOTO .img img{
+    width: 300%;
+}
+
+.MotoGP_API_ROW .COLOR {
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MotoGP_API_ROW.DRIVER .COLOR img {
+    width: 75%;
+    border: 1px solid #ffffffaa;
+    border-radius: 5px;
+}
+
+.MotoGP_API_ROW.TEAM .PHOTO{
+    display: flex;
+    justify-content: right;
+}
+
+.MotoGP_API_ROW.TEAM .PHOTO img{
+  width: 68%;
+}
+
+
+.MotoGP_API_ROW.TEAM .PHOTO .img{
+    width: 13vh;
+    height: 6vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.MotoGP_API_ROW.TEAM .NAME{
+    text-align: start;
+    width: 100%;
+}
+
+.MotoGP_API_ROW_HEADER .PHOTO{
+    width: 7vh;
+    display: flex;
+    justify-content: start !important;
 }

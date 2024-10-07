@@ -1,6 +1,6 @@
 .GoogleDock {
     position: absolute;
-    bottom: 15vh;
+    bottom: 1vh;
     right: 0;
     background-color: #323232;
     height: 10vh;
@@ -34,7 +34,7 @@
 
 .GoogleDock .Head:hover {
     transform: rotatez(-45deg);
-    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+    
 }
 
 
